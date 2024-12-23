@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 8s ease infinite;
+}
+
+.inherit-font {
+  font-family: inherit;
+}
+
+/* Dynamic color classes */
+.text-resume-primary {
+  color: var(--color-primary);
+}
+
+.bg-resume-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.hover\:text-resume-primary-hover:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Page break controls */
+.page-break-inside-avoid {
+  page-break-inside: avoid;
+}
+
+/* New page spacing */
+@media print {
+  section {
+    break-inside: avoid;
+    margin-top: 2rem;
+  }
+  
+  section:first-of-type {
+    margin-top: 0;
+  }
+}

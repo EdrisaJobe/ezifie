@@ -22,9 +22,12 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="py-12 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-primary-light/20" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(27,172,255,0.1)_0%,transparent_60%)]" />
+    <section className="py-16 relative overflow-hidden">
+      {/* Enhanced colorful background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-primary-light/30 to-primary/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(27,172,255,0.2)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(96,165,250,0.15)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[conic-gradient(from_90deg_at_80%_50%,#ffffff00,rgba(27,172,255,0.1),#ffffff00)]" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
@@ -35,23 +38,29 @@ export default function FAQSection() {
         >
           <h2 className="text-sm font-bold text-primary uppercase tracking-wide">FAQ</h2>
           <h3 className="mt-2 text-4xl font-bold text-gray-900">
-            Common Questions About{' '}
-            <span className="text-primary">Ezifie</span>
+            Common Asked Questions
           </h3>
           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
             Get answers to frequently asked questions about our resume builder and how it can help advance your career.
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
-          {faqs.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              delay={0.2 + index * 0.1}
-            />
-          ))}
+        <div className="max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-primary/10"
+          >
+            {faqs.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+                delay={0.2 + index * 0.1}
+              />
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ export default function Values() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -42,16 +42,12 @@ export default function Values() {
                 />
               </motion.div>
               
-              {/* Overlay gradients */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent mix-blend-overlay" />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent" />
-              
-              {/* Floating elements */}
+              {/* Floating element */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-lg p-4 shadow-lg"
+                className="absolute bottom-8 left-8 bg-white rounded-lg p-4 shadow-lg"
               >
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
@@ -64,10 +60,6 @@ export default function Values() {
                 </div>
               </motion.div>
             </div>
-
-            {/* Decorative elements */}
-            <div className="absolute -top-8 -left-8 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-100 rounded-full blur-3xl" />
           </motion.div>
 
           {/* Right side - Values */}
