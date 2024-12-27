@@ -1,0 +1,9 @@
+@media print {
+  // ... existing code ...
+  .preview-page {
+    margin: 0;
+    page-break-after: always; /* Force new page */
+    height: auto; /* Allow content to determine height */
+  }
+  // ... existing code ...
+} 
