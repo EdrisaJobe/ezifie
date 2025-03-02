@@ -12,7 +12,6 @@ import LoginPage from './pages/Login/LoginPage';
 import SignUpPage from './pages/SignUp/SignUpPage';
 import DashboardPage from './pages/Dashboard/DashboardPage';
 import ResumeBuilder from './pages/ResumeBuilder';
-import ResumeTemplates from './pages/ResumeTemplates';
 import CVBuilderPage from './pages/CVBuilder';
 import PricingPage from './pages/Pricing';
 
@@ -24,7 +23,6 @@ function App() {
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/resume-builder" element={<ResumeBuilder />} />
-        <Route path="/resume-templates" element={<ResumeTemplates />} />
         <Route path="/cv-builder" element={<CVBuilderPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/" element={

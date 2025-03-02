@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import CoverLetterHeader from './components/CoverLetterHeader';
-import CoverLetterEditor from './components/CoverLetterEditor';
-import CoverLetterPreview from './components/CoverLetterPreview';
-import { CoverLetterData } from './types';
 
 export default function CoverLetterBuilder() {
 
