@@ -13,7 +13,6 @@ export default function FormSection({ title, description, children, action }: Fo
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white rounded-xl shadow-sm p-6"
     >
       <div className="space-y-4">
         <div className="flex items-center justify-between">

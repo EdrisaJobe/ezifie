@@ -17,8 +17,6 @@ export default function NavLinks({ mobile = false }: NavLinksProps) {
       label: 'Resume',
       children: [
         { label: 'Resume Builder', href: '/resume-builder' },
-        { label: 'Resume Templates', href: '/resume-templates' },
-        { label: 'Resume Examiner', href: '/resume-examiner' }
       ]
     },
     { label: 'Cover Letter', href: '/cv-builder' },

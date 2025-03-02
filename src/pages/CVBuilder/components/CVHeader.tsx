@@ -24,31 +24,6 @@ export default function CVHeader() {
             <h1 className="text-2xl font-bold text-gray-900">Cover Letter Builder</h1>
             <p className="text-sm text-gray-600">Create your cover letter</p>
           </div>
-          <div className="flex items-center space-x-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-4 py-2 text-gray-600 hover:text-primary transition-colors flex items-center gap-2"
-            >
-              <Share2 className="w-4 h-4" />
-              <span>Share</span>
-            </motion.button>
-            <motion.label
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-4 py-2 bg-primary-light text-primary rounded-lg hover:bg-primary-light/80 transition-colors flex items-center gap-2 cursor-pointer"
-            >
-              <Upload className="w-4 h-4" />
-              <span>Upload Cover Letter</span>
-              <input
-                type="file"
-                accept=".pdf,.doc,.docx"
-                onChange={handleFileUpload}
-                className="hidden"
-              />
-            </motion.label>
-            <DownloadButton onDownload={handleDownload} />
-          </div>
         </div>
       </div>
     </header>

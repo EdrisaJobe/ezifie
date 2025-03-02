@@ -15,11 +15,10 @@ export default function CoverLetterPreview({ data }: CoverLetterPreviewProps) {
   };
 
   return (
-    <div className="sticky top-24">
+    <div>
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white rounded-xl shadow-sm p-8 min-h-[1056px] max-h-[1056px] overflow-y-auto"
       >
         {/* Sender Information */}
         <div className="mb-8">

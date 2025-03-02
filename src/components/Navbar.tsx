@@ -18,8 +18,8 @@ export default function Navbar() {
               <img src="/logo.png" alt="Ezifie Logo" className="w-8 h-8" />
               <span className="text-2xl font-bold text-primary">Ezifie</span>
             </Link>
-            <Link to="/" className="text-sm font-bold text-gray-500 ml-3 self-center hover:text-primary transition-colors">
-              Making it Easy
+            <Link to="/" className="text-sm font-bold text-gray-600 ml-3 self-center hover:text-primary transition-colors">
+              Demo purposed site made by Edrisa Jobe
             </Link>
           </div>
 
