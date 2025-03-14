@@ -70,7 +70,7 @@ export function generateTestData(): Partial<ResumeData> {
       'Docker',
       'Kubernetes',
       'GraphQL',
-      'MongoDB'
+      'Supabase'
     ],
     languages: [
       { name: 'English', proficiency: 'Native' },
