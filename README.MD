@@ -1,6 +1,6 @@
 # ✨ Ezifie – Modern Resume Builder Platform  
 
-![Ezifie Screenshot](https://i.postimg.cc/7659P1yQ/Screenshot-27-12-2024-02153-ezifie-com.jpg)  
+![Ezifie Screenshot](https://www.imghippo.com/i/RyNQ3367qSE.jpg)  
 
 **Craft stunning resumes that land interviews.**  
 
