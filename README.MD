@@ -1,6 +1,6 @@
 # ✨ Ezifie – Modern Resume Builder Platform  
 
-![Ezifie Screenshot](https://www.imghippo.com/i/RyNQ3367qSE.jpg)  
+![Ezifie Screenshot](https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22Screenshot-27-12-2024-02153-ezifie-com.jpg%22%2C%22type%22%3A%22image%2Fjpeg%22%2C%22signedurl_expire%22%3A%222028-03-26T04%3A46%3A55.852Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F6cf3b5c240df48a9%2FScreenshot-27-12-2024-02153-ezifie-com.jpg%3FExpires%3D1837658816%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3D23DFi4IiqGRnLn4UGAHm8ZgvEummk4ApgGZ0b21RXNEcwdlPzkQoZzPMEQdVT9NWmdjOWRZSclW-U6m9b2ErokLlAJ6sY51nhev4n5jrLGITwhBNppjr4i4JxRZhLwpLAXeed26RBym5qSsnXNrTFloZePkU5wVQ2AeaOmZ4ZQrwkWiDZEk2zNe3~I9f1Am5W3Ag9TTFgoRCAs-o~0gCREv5Ww4YwshlnT6PTbjUYLpta7nSqnup7Y0xakNAagZ7Uea4vcf27OAoelLSiJ8FT~xdpXs1H-leIhDNf38fcsgrQnTfVHrXoMSxslSRx~kiIgOeOH4Dd~mMdFvCs-zd4g__%22%7D)  
 
 **Craft stunning resumes that land interviews.**  
 
