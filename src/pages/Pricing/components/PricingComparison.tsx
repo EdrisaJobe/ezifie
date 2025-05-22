@@ -18,20 +18,6 @@ const features = {
       annual: true
     },
     {
-      name: 'Cover Letter Builder',
-      description: 'Get a matching cover letter in seconds',
-      basic: true,
-      pro: true,
-      annual: true
-    },
-    {
-      name: 'Cover Letter Templates',
-      description: 'Explore our templates to match it with your resume',
-      basic: true,
-      pro: true,
-      annual: true
-    },
-    {
       name: 'Download in Multiple Formats',
       description: 'PDF, Word and TXT',
       basic: 'TXT format only',

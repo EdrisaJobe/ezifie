@@ -1,8 +1,35 @@
 import { motion } from 'framer-motion';
-import { ResumeData } from '../types';
 
 interface ResumePreviewProps {
-  data: ResumeData;
+  data: {
+    personalInfo: {
+      fullName: string;
+      title: string;
+      email: string;
+      phone: string;
+      location: string;
+      summary: string;
+    };
+    experience: Array<{
+      id: string;
+      title: string;
+      company: string;
+      startDate: string;
+      endDate: string;
+      current: boolean;
+      description: string;
+    }>;
+    education: Array<{
+      id: string;
+      institution: string;
+      degree: string;
+      startDate: string;
+      endDate: string;
+      current: boolean;
+      gpa?: string;
+    }>;
+    skills: string[];
+  };
 }
 
 export default function ResumePreview({ data }: ResumePreviewProps) {
@@ -51,12 +78,12 @@ export default function ResumePreview({ data }: ResumePreviewProps) {
             <div className="space-y-4">
               {data.education.map((edu) => (
                 <div key={edu.id}>
-                  <h3 className="font-medium text-gray-900">{edu.school}</h3>
-                  <p className="text-primary">{edu.degree} in {edu.field}</p>
+                  <h3 className="font-medium text-gray-900">{edu.institution}</h3>
+                  <p className="text-primary">{edu.degree}</p>
                   <p className="text-sm text-gray-600">
                     {edu.startDate} - {edu.current ? 'Present' : edu.endDate}
                   </p>
-                  <p className="text-sm text-gray-600 mt-2">{edu.description}</p>
+                  {edu.gpa && <p className="text-sm text-gray-600">GPA: {edu.gpa}</p>}
                 </div>
               ))}
             </div>
@@ -65,57 +92,16 @@ export default function ResumePreview({ data }: ResumePreviewProps) {
 
         {/* Skills */}
         {data.skills.length > 0 && (
-          <section className="mb-8">
+          <section>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">Skills</h2>
             <div className="flex flex-wrap gap-2">
               {data.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1 bg-primary-light text-primary rounded-full text-sm"
+                  className="px-3 py-1 bg-primary-light text-primary rounded-md text-sm"
                 >
                   {skill}
                 </span>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Projects */}
-        {data.projects.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Projects</h2>
-            <div className="space-y-4">
-              {data.projects.map((project) => (
-                <div key={project.id}>
-                  <h3 className="font-medium text-gray-900">{project.name}</h3>
-                  <p className="text-sm text-gray-600 mt-1">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded text-xs"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Certifications */}
-        {data.certifications.length > 0 && (
-          <section>
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Certifications</h2>
-            <div className="space-y-4">
-              {data.certifications.map((cert) => (
-                <div key={cert.id}>
-                  <h3 className="font-medium text-gray-900">{cert.name}</h3>
-                  <p className="text-primary">{cert.issuer}</p>
-                  <p className="text-sm text-gray-600">{cert.date}</p>
-                </div>
               ))}
             </div>
           </section>

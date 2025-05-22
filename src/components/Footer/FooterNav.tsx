@@ -4,7 +4,6 @@ export default function FooterNav() {
   const links = {
     Products: [
       { label: 'Resume Builder', href: '#' },
-      { label: 'CV Builder', href: '#' },
       { label: 'Templates', href: '#' },
       { label: 'Pricing', href: '#' },
     ],

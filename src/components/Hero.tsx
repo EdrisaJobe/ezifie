@@ -65,7 +65,7 @@ export default function Hero() {
                 onClick={handleResumeClick}
                 className="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary-hover transition-all duration-300 shadow-lg shadow-primary/20"
               >
-                Create Your Resume Now
+                Make a Resume
               </motion.button>
               <motion.button 
                 whileHover={{ scale: 1.02 }}
@@ -73,7 +73,7 @@ export default function Hero() {
                 onClick={() => navigate('/pricing')}
                 className="px-8 py-4 bg-white text-primary rounded-full font-semibold border-2 border-primary hover:bg-primary-light transition-all duration-300 shadow-lg shadow-primary/10"
               >
-                Explore Templates
+                See Pricing
               </motion.button>
             </div>
 

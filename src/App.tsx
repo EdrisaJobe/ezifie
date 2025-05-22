@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Values from './components/Values';
 import Features from './components/Features';
 import Banner from './components/Banner';
-import CVBuilder from './components/CVBuilder';
 import TestimonialsSection from './components/Testimonials/TestimonialsSection';
 import FAQSection from './components/FAQ/FAQSection';
 import Footer from './components/Footer/Footer';
@@ -12,7 +11,6 @@ import LoginPage from './pages/Login/LoginPage';
 import SignUpPage from './pages/SignUp/SignUpPage';
 import DashboardPage from './pages/Dashboard/DashboardPage';
 import ResumeBuilder from './pages/ResumeBuilder';
-import CVBuilderPage from './pages/CVBuilder';
 import PricingPage from './pages/Pricing';
 
 function App() {
@@ -23,7 +21,6 @@ function App() {
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/resume-builder" element={<ResumeBuilder />} />
-        <Route path="/cv-builder" element={<CVBuilderPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/" element={
           <div className="min-h-screen bg-white">
@@ -34,7 +31,6 @@ function App() {
               <TestimonialsSection />
               <Features />
               <Banner />
-              <CVBuilder />
               <div className="pb-20">
                 <FAQSection />
               </div>
