@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
-import Values from './components/sections/Values';
-import Features from './components/sections/Features';
+import About from './components/sections/About';
 import TestimonialsSection from './components/sections/TestimonialsSection';
 import FAQSection from './components/sections/FAQSection';
 import Footer from './components/layout/Footer';
@@ -25,14 +24,9 @@ function App() {
           <div className="min-h-screen bg-white">
             <Navbar />
             <Hero />
-            <div className="space-y-20">
-              <Values />
-              <TestimonialsSection />
-              <Features />
-              <div className="pb-20">
-                <FAQSection />
-              </div>
-            </div>
+            <About />
+            <TestimonialsSection />
+            <FAQSection />
             <Footer />
           </div>
         } />
