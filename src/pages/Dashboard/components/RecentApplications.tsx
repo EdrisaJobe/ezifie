@@ -18,6 +18,38 @@ export default function RecentApplications() {
       status: 'Interview Scheduled',
       appliedDate: '2024-02-18',
       logo: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=50&h=50'
+    },
+    {
+      company: 'StartupCo',
+      role: 'Frontend Developer',
+      location: 'New York, NY',
+      status: 'Application Sent',
+      appliedDate: '2024-02-17',
+      logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&q=80&w=50&h=50'
+    },
+    {
+      company: 'DataFlow',
+      role: 'Data Analyst',
+      location: 'Austin, TX',
+      status: 'Phone Screening',
+      appliedDate: '2024-02-15',
+      logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=50&h=50'
+    },
+    {
+      company: 'CloudTech',
+      role: 'DevOps Engineer',
+      location: 'Seattle, WA',
+      status: 'Rejected',
+      appliedDate: '2024-02-14',
+      logo: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=50&h=50'
+    },
+    {
+      company: 'InnovateAI',
+      role: 'Machine Learning Engineer',
+      location: 'Remote',
+      status: 'Under Review',
+      appliedDate: '2024-02-12',
+      logo: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=50&h=50'
     }
   ];
 
@@ -50,7 +82,15 @@ export default function RecentApplications() {
                   </span>
                 </div>
               </div>
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-light text-primary">
+              <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                app.status === 'Interview Scheduled' || app.status === 'Phone Screening' 
+                  ? 'bg-green-100 text-green-800'
+                  : app.status === 'Rejected'
+                  ? 'bg-red-100 text-red-800'
+                  : app.status === 'Under Review'
+                  ? 'bg-yellow-100 text-yellow-800'
+                  : 'bg-primary-light text-primary'
+              }`}>
                 {app.status}
               </span>
             </div>

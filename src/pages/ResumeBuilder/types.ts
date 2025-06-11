@@ -1,3 +1,5 @@
+import { ResumeColor } from './utils/colors';
+
 export interface Font {
   name: string;
   family: string;

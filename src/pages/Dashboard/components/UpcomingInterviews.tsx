@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, Clock, Video, Building2 } from 'lucide-react';
+import { Calendar, Clock, Video, Building2, Phone, Users } from 'lucide-react';
 
 export default function UpcomingInterviews() {
   const interviews = [
@@ -11,6 +11,24 @@ export default function UpcomingInterviews() {
       type: 'Technical Interview',
       platform: 'Zoom',
       interviewer: 'Sarah Johnson'
+    },
+    {
+      company: 'DesignLabs',
+      role: 'UX Designer',
+      date: '2024-02-24',
+      time: '2:30 PM PST',
+      type: 'Portfolio Review',
+      platform: 'Google Meet',
+      interviewer: 'Mike Chen'
+    },
+    {
+      company: 'StartupCo',
+      role: 'Frontend Developer',
+      date: '2024-02-26',
+      time: '11:00 AM PST',
+      type: 'Behavioral Interview',
+      platform: 'Phone Call',
+      interviewer: 'Alex Rivera'
     }
   ];
 
@@ -41,7 +59,13 @@ export default function UpcomingInterviews() {
                     {interview.time}
                   </p>
                   <p className="flex items-center gap-2 text-sm text-gray-600">
-                    <Video className="w-4 h-4" />
+                    {interview.platform === 'Phone Call' ? (
+                      <Phone className="w-4 h-4" />
+                    ) : interview.type === 'Panel Interview' ? (
+                      <Users className="w-4 h-4" />
+                    ) : (
+                      <Video className="w-4 h-4" />
+                    )}
                     {interview.platform} with {interview.interviewer}
                   </p>
                 </div>
