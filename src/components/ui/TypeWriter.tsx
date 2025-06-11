@@ -1,5 +1,4 @@
-import { motion, useAnimationControls } from 'framer-motion';
-import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 interface TypeWriterProps {
   text: string;
@@ -14,35 +13,14 @@ export default function TypeWriter({
   delay = 0,
   as: Component = "span"
 }: TypeWriterProps) {
-  const controls = useAnimationControls();
-  
-  useEffect(() => {
-    const animate = async () => {
-      await controls.start({
-        width: "100%",
-        transition: {
-          duration: text.length * 0.05,
-          delay,
-          ease: "linear",
-          repeat: Infinity,
-          repeatDelay: 5
-        }
-      });
-    };
-    
-    animate();
-  }, [controls, text, delay]);
-
   return (
-    <Component className="relative inline-block">
-      <span className={`${className} opacity-30`}>{text}</span>
-      <motion.span
-        initial={{ width: 0 }}
-        animate={controls}
-        className="absolute inset-0 overflow-hidden whitespace-nowrap"
-      >
-        <span className={className}>{text}</span>
-      </motion.span>
-    </Component>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay }}
+      className="inline-block"
+    >
+      <Component className={className}>{text}</Component>
+    </motion.div>
   );
 }

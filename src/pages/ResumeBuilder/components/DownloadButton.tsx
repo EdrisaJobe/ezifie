@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Download } from 'lucide-react';
-import { downloadAsPDF, downloadAsDocx } from '../../utils/downloadUtils';
-import { ResumeData } from '../../pages/ResumeBuilder/types';
+import { downloadAsPDF, downloadAsDocx } from '../../../utils/downloadUtils';
+import { ResumeData } from '../types';
 
 interface DownloadButtonProps {
   elementId?: string;

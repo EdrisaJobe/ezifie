@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Values from './components/Values';
-import Features from './components/Features';
-import Banner from './components/Banner';
-import TestimonialsSection from './components/Testimonials/TestimonialsSection';
-import FAQSection from './components/FAQ/FAQSection';
-import Footer from './components/Footer/Footer';
+import Navbar from './components/layout/Navbar';
+import Hero from './components/sections/Hero';
+import Values from './components/sections/Values';
+import Features from './components/sections/Features';
+import TestimonialsSection from './components/sections/TestimonialsSection';
+import FAQSection from './components/sections/FAQSection';
+import Footer from './components/layout/Footer';
 import LoginPage from './pages/Login/LoginPage';
 import SignUpPage from './pages/SignUp/SignUpPage';
 import DashboardPage from './pages/Dashboard/DashboardPage';
@@ -30,7 +29,6 @@ function App() {
               <Values />
               <TestimonialsSection />
               <Features />
-              <Banner />
               <div className="pb-20">
                 <FAQSection />
               </div>

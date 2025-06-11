@@ -42,6 +42,14 @@ export interface Education {
   gpa?: string;
 }
 
+export interface Certification {
+  id: string;
+  name: string;
+  issuer: string;
+  date: string;
+  link?: string;
+}
+
 export interface ResumeData {
   personalInfo: PersonalInfo;
   experience: WorkExperience[];

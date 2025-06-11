@@ -4,7 +4,7 @@ import { Plus, X } from 'lucide-react';
 import { WorkExperience } from '../../types';
 import FormSection from './shared/FormSection';
 import FormInput from './shared/FormInput';
-import EnhanceButton from '../../../../components/ui/EnhanceButton';
+import EnhanceButton from '../EnhanceButton';
 import { generateWorkDescription } from '../../../../utils/experienceGenerator';
 
 interface WorkExperienceFormProps {

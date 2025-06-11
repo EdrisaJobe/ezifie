@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/layout/Navbar';
 import ResumeHeader from './components/ResumeHeader';
 import ResumeEditor from './components/ResumeEditor';
 import PreviewPanel from './components/ResumePreview/PreviewPanel';

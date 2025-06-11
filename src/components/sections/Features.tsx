@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Wand2, Target, Zap } from 'lucide-react';
-import ResumePreview from './ui/ResumePreview';
+import ResumePreview from '../ui/ResumePreview';
 
 export default function Features() {
   return (

@@ -73,7 +73,7 @@ export default function CertificationsForm({ certifications, onChange }: Certifi
               <FormInput
                 label="Credential URL"
                 name="link"
-                value={cert.link}
+                value={cert.link || ''}
                 onChange={(e) => updateCertification(cert.id, { link: e.target.value })}
                 placeholder="https://www.credential.net/..."
               />

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FileText, Briefcase, Rocket } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import AnimatedUI from './AnimatedUI';
+import AnimatedUI from '../ui/AnimatedUI';
 
 export default function Hero() {
   const navigate = useNavigate();
