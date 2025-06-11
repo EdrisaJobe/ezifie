@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Download } from 'lucide-react';
-import { downloadAsPDF } from '../../../utils/downloadUtils';
+import { downloadAsPDF } from '../../../utils/download';
 
 interface DownloadButtonProps {
   elementId?: string;

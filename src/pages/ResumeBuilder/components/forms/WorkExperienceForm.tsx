@@ -5,12 +5,19 @@ import { WorkExperience } from '../../types';
 import FormSection from './shared/FormSection';
 import FormInput from './shared/FormInput';
 import EnhanceButton from '../EnhanceButton';
-import { generateWorkDescription } from '../../../../utils/experienceGenerator';
 
 interface WorkExperienceFormProps {
   experience: WorkExperience[];
   onChange: (experience: WorkExperience[]) => void;
 }
+
+const experienceTemplates = [
+  "• Collaborated with cross-functional teams to deliver high-quality solutions\n• Implemented best practices and improved system efficiency\n• Contributed to project planning and execution",
+  "• Developed and maintained key features for the platform\n• Worked closely with stakeholders to gather requirements\n• Participated in code reviews and knowledge sharing sessions",
+  "• Led initiatives to improve team productivity and code quality\n• Mentored junior team members and provided technical guidance\n• Contributed to architectural decisions and system design",
+  "• Analyzed requirements and delivered solutions on time\n• Participated in agile development processes and sprint planning\n• Maintained and improved existing systems and features",
+  "• Collaborated with design and product teams to implement new features\n• Optimized performance and resolved technical issues\n• Documented processes and contributed to team knowledge base"
+];
 
 export default function WorkExperienceForm({ experience, onChange }: WorkExperienceFormProps) {
   const [isAdding, setIsAdding] = useState(false);
@@ -41,7 +48,8 @@ export default function WorkExperienceForm({ experience, onChange }: WorkExperie
   };
 
   const handleEnhance = (id: string, title: string) => {
-    const description = generateWorkDescription();
+    const randomIndex = Math.floor(Math.random() * experienceTemplates.length);
+    const description = experienceTemplates[randomIndex];
     updateExperience(id, { description });
   };
 
