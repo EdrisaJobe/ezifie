@@ -41,7 +41,7 @@ export default function WorkExperienceForm({ experience, onChange }: WorkExperie
   };
 
   const handleEnhance = (id: string, title: string) => {
-    const description = generateWorkDescription(title);
+    const description = generateWorkDescription();
     updateExperience(id, { description });
   };
 

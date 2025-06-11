@@ -18,7 +18,7 @@ export default function PersonalInfoForm({ data, onChange }: PersonalInfoFormPro
   };
 
   const handleAIEnhance = () => {
-    const generatedSummary = generateProfessionalSummary(data.title);
+    const generatedSummary = generateProfessionalSummary();
     onChange({ ...data, summary: generatedSummary });
   };
 
